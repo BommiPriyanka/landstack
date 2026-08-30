@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --color-brand-50:  #eef7ff;
+  --color-brand-100: #d9edff;
+  --color-brand-200: #bce0ff;
+  --color-brand-300: #8eceff;
+  --color-brand-400: #59b0ff;
+  --color-brand-500: #338ef7;
+  --color-brand-600: #1d6fe8;
+  --color-brand-700: #1558cc;
+  --color-brand-800: #1747a6;
+  --color-brand-900: #193f85;
+
+  --color-saffron-400: #fb923c;
+  --color-saffron-500: #f97316;
+  --color-saffron-600: #ea6200;
+
+  --color-india-green-400: #4ade80;
+  --color-india-green-500: #22c55e;
+  --color-india-green-600: #16a34a;
+
+  --color-surface-0:   #0d1117;
+  --color-surface-1:   #161b22;
+  --color-surface-2:   #1c2130;
+  --color-surface-3:   #21262d;
+  --color-surface-4:   #2d333b;
+  --color-border:      rgba(48, 56, 70, 0.8);
+  --color-border-subtle: rgba(48, 56, 70, 0.4);
+
+  --color-text-primary:   #e6edf3;
+  --color-text-secondary: #8b949e;
+  --color-text-muted:     #484f58;
+
+  --color-success:  #3fb950;
+  --color-warning:  #d29922;
+  --color-danger:   #f85149;
+  --color-info:     #58a6ff;
+
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+  --radius-2xl: 24px;
+
+  --shadow-sm:  0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md:  0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg:  0 8px 30px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 20px rgba(51, 142, 247, 0.15);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--color-surface-0);
+  color: var(--color-text-primary);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  line-height: 1.6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+}
+
+.glass-card {
+  background: rgba(22, 27, 34, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(51, 142, 247, 0.4);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
